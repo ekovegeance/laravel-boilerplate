@@ -29,7 +29,7 @@ Use [Style Guide](https://ekovegeance.github.io/styleguide/coding/laravel) for C
 ## Tech Stack
 
 - [Laravel](https://laravel.com/docs/12.x) - learn about Laravel
-- [Eloquent ORM](https://laravel.com/docs/11.x/eloquent) - MySQL
+- [Eloquent ORM](https://laravel.com/docs/11.x/eloquent) - PostgreSQL
 - [Auth Laravel Breeze](https://laravel.com/docs/12.x/starter-kits#laravel-breeze) - Inertia React
 - [Dependencies/ third party library](https://github.com/ekovegeance/laravel-templates/blob/main/package.json)
 
