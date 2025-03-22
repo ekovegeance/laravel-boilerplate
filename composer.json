@@ -1,11 +1,19 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/react-starter-kit",
+    "name": "vngne/laravel-boilerplate",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "A Laravel boilerplate with Inertia.js, Tailwind CSS, and Vite.",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "inertia",
+        "tailwindcss",
+        "vite",
+        "boilerplate",
+        "starter",
+        "template",
+        "scaffold",
+        "stoicss"
     ],
     "license": "MIT",
     "require": {
