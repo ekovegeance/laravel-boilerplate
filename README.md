@@ -4,8 +4,7 @@
 First, run the development server:
 
 ```bash
-git clone https://github.com/ekovegeance/laravel-boilerplate && cd laravel-boilerplate
-composer install && npm install
+laravel new --using=vngne/boilerplate
 ```
 ```bash
 composer run dev
