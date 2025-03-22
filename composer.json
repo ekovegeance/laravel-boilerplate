@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "vngne/laravel-boilerplate",
+    "name": "laravel/boilerplate",
     "type": "project",
     "description": "A Laravel boilerplate with Inertia.js, Tailwind CSS, and Vite.",
     "keywords": [
