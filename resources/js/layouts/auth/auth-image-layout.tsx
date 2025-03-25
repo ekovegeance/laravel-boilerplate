@@ -20,7 +20,6 @@ export default function AuthImageLayout({ children, title, description }: React.
                                         <h1 className="text-xl font-bold">{title}</h1>
                                         <p className="text-muted-foreground text-center text-sm text-balance">{description}</p>
                                     </div>
-
                                     {children}
                                 </div>
                             </div>
