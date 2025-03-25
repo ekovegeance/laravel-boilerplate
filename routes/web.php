@@ -6,6 +6,10 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('landing');
 })->name('home');
+Route::get('/login5', function () {
+    return Inertia::render('login5');
+})->name('login5');
+
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
