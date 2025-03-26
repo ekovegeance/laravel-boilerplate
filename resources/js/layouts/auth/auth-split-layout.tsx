@@ -9,22 +9,37 @@ interface AuthLayoutProps {
 
 export default function AuthSplitLayout({ children, title, description }: PropsWithChildren<AuthLayoutProps>) {
     return (
-        <div className="relative grid h-dvh flex-col items-center justify-center px-8 sm:px-0 lg:max-w-none lg:grid-cols-2 lg:px-0">
-            <div className="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex dark:border-r">
-                <div className="absolute inset-0 bg-zinc-900" />
+        <div className="grid min-h-svh lg:grid-cols-2">
+        <div className="flex flex-col gap-4 p-6 md:p-10">
+          <div className="flex justify-center gap-2 md:justify-start">
+            <Link href="/" className="flex items-center gap-2 font-medium">
+              <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
+                <Command className="size-4" />
+              </div>
+              Next Boilerplate
+            </Link>
+          </div>
+          <div className="flex flex-1 items-center justify-center">
+            <div className="w-full max-w-xs">
+              <div className="flex flex-col gap-6">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <h1 className="text-xl font-bold">{title}</h1>
+                <p className="text-balance text-sm text-muted-foreground">
+                  {description}
+                </p>
+              </div>
+              {children}
+              </div>
             </div>
-            <div className="w-full lg:p-8">
-                <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
-                    <Link href={route('home')} className="relative z-20 flex items-center justify-center lg:hidden">
-                        <Command className="h-10 text-black sm:h-12" />
-                    </Link>
-                    <div className="flex flex-col items-start gap-2 text-left sm:items-center sm:text-center">
-                        <h1 className="text-xl font-medium">{title}</h1>
-                        <p className="text-muted-foreground text-sm text-balance">{description}</p>
-                    </div>
-                    {children}
-                </div>
-            </div>
+          </div>
         </div>
+        <div className="relative hidden bg-muted lg:block">
+          <img
+            src="images/floss.png"
+            alt="Image"
+            className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          />
+        </div>
+      </div>
     );
 }
