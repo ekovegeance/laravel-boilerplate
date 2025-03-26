@@ -6,7 +6,7 @@ export function Author() {
     return (
         <HoverCard>
             <HoverCardTrigger asChild>
-                <Button className="text-md text-zinc-900" variant="link">
+                <Button className="text-md text-primary" variant="link">
                     @ekovegeance
                 </Button>
             </HoverCardTrigger>

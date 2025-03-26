@@ -12,7 +12,7 @@ export default function CTA() {
                 </p>
                 <div className="mt-8">
                     <Button size="lg" asChild>
-                        <a href="https://github.com/ekovegeance/laravel-templates">
+                        <a href="https://github.com/ekovegeance/laravel-boilerplate">
                             Get Started <ArrowRight className="ml-2 h-4 w-4" />
                         </a>
                     </Button>

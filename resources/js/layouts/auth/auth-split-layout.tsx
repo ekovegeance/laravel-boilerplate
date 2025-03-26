@@ -16,7 +16,7 @@ export default function AuthSplitLayout({ children, title, description }: PropsW
               <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
                 <Command className="size-4" />
               </div>
-              Next Boilerplate
+              Laravel Boilerplate
             </Link>
           </div>
           <div className="flex flex-1 items-center justify-center">
