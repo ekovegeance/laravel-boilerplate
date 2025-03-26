@@ -9,7 +9,7 @@ export default function Hero() {
                 <h1 className="bg-red-600 bg-clip-text text-5xl/[1.1] font-extrabold text-transparent md:text-5xl lg:text-6xl lg:leading-[1.1]">
                     Laravel Boilerplate
                 </h1>
-                <p className="max-w-[750px] text-lg text-primary sm:text-xl">
+                <p className="text-primary max-w-[750px] text-lg sm:text-xl">
                     This modern Full Stack{' '}
                     <a href="https://laravel.com/docs/12.x/frontend#inertia" className="text-primary font-semibold">
                         Laravel Inertia (react typescript)
@@ -23,7 +23,7 @@ export default function Hero() {
                         Laravel Brezze
                     </a>
                     , and a responsive{' '}
-                    <a href="https://ui.shadcn.com/" className="font-semibold text-primary">
+                    <a href="https://ui.shadcn.com/" className="text-primary font-semibold">
                         Shadcn/UI{' '}
                     </a>
                     interface.
