@@ -11,8 +11,9 @@ import { useInitials } from '@/hooks/use-initials';
 import { cn } from '@/lib/utils';
 import { type BreadcrumbItem, type NavItem, type SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
-import { BookOpen, Command, Folder, LayoutGrid, Menu, Search } from 'lucide-react';
-import AppLogo from './app-logo';
+import { BookOpen, Folder, LayoutGrid, Menu, Search } from 'lucide-react';
+import AppLogo from '@/components/app-logo';
+import AppLogoIcon from '@/components/app-logo-icon';
 
 const mainNavItems: NavItem[] = [
     {
@@ -60,7 +61,7 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
                             <SheetContent side="left" className="bg-sidebar flex h-full w-64 flex-col items-stretch justify-between">
                                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                                 <SheetHeader className="flex justify-start text-left">
-                                    <Command className="h-6 w-6 text-black dark:text-white" />
+                                    <AppLogoIcon className="size-6 text-primary" />
                                 </SheetHeader>
                                 <div className="flex h-full flex-1 flex-col space-y-4 p-4">
                                     <div className="flex h-full flex-col justify-between text-sm">
