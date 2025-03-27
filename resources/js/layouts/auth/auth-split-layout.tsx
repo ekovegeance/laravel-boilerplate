@@ -1,5 +1,5 @@
+import AppLogoIcon from '@/components/app-logo-icon';
 import { Link } from '@inertiajs/react';
-import { Command } from 'lucide-react';
 import { type PropsWithChildren } from 'react';
 
 interface AuthLayoutProps {
@@ -13,8 +13,8 @@ export default function AuthSplitLayout({ children, title, description }: PropsW
             <div className="flex flex-col gap-4 p-6 md:p-10">
                 <div className="flex justify-center gap-2 md:justify-start">
                     <Link href="/" className="flex items-center gap-2 font-medium">
-                        <div className="bg-primary text-primary-foreground flex h-6 w-6 items-center justify-center rounded-md">
-                            <Command className="size-4" />
+                        <div className="bg-primary text-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
+                            <AppLogoIcon className="dark:text-primary-foreground size-4" />
                         </div>
                         Laravel Boilerplate
                     </Link>
