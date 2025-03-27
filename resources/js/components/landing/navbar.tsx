@@ -1,3 +1,4 @@
+import AppLogoIcon from '@/components/app-logo-icon';
 import { Button } from '@/components/ui/button';
 import { useInitials } from '@/hooks/use-initials';
 import { SharedData } from '@/types';
@@ -5,7 +6,6 @@ import { Link, usePage } from '@inertiajs/react';
 import clsx from 'clsx';
 import { Menu, X } from 'lucide-react';
 import * as React from 'react';
-import AppLogoIcon from '@/components/app-logo-icon';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu';
 import { UserMenuContent } from '../user-menu-content';
@@ -32,7 +32,7 @@ export function Navbar() {
                         <div className="flex flex-shrink-0 items-center">
                             <Link href="/" className="text-xl font-bold text-gray-800">
                                 <div className="bg-primary text-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                                    <AppLogoIcon className='size-4 text-primary-foreground' />
+                                    <AppLogoIcon className="text-primary-foreground size-4" />
                                 </div>
                             </Link>
                         </div>
