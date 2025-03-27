@@ -3,6 +3,8 @@ import { LoaderCircle } from 'lucide-react';
 import { FormEventHandler } from 'react';
 
 import InputError from '@/components/stocks/input-error';
+import InputShowPassword from '@/components/stocks/input-show-password';
+import InputStrongPassword from '@/components/stocks/input-strong-password';
 import TextLink from '@/components/text-link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -35,7 +37,7 @@ export default function Register() {
         <AuthLayout title="Create an account" description="Enter your details below to create your account">
             <Head title="Register" />
             <form className="flex flex-col gap-6" onSubmit={submit}>
-                <div className="grid gap-6">
+                <div className="flex flex-col gap-6">
                     <div className="grid gap-2">
                         <Label htmlFor="name">Name</Label>
                         <Input
@@ -70,10 +72,8 @@ export default function Register() {
                     </div>
 
                     <div className="grid gap-2">
-                        <Label htmlFor="password">Password</Label>
-                        <Input
-                            id="password"
-                            type="password"
+                        <InputStrongPassword
+                            label="Password"
                             required
                             tabIndex={3}
                             autoComplete="new-password"
@@ -82,14 +82,12 @@ export default function Register() {
                             disabled={processing}
                             placeholder="Password"
                         />
-                        <InputError message={errors.password} />
+                        <InputError className="-mt-4" message={errors.password} />
                     </div>
 
                     <div className="grid gap-2">
-                        <Label htmlFor="password_confirmation">Confirm password</Label>
-                        <Input
-                            id="password_confirmation"
-                            type="password"
+                        <InputShowPassword
+                            label="Confirm password"
                             required
                             tabIndex={4}
                             autoComplete="new-password"
