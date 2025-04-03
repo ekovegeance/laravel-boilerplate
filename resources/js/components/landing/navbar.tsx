@@ -3,20 +3,21 @@ import { Button } from '@/components/ui/button';
 import { useInitials } from '@/hooks/use-initials';
 import { SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
-import clsx from 'clsx';
+// import clsx from 'clsx';
+import AppearanceToggleDropdown from '@/components/appearance-dropdown';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { UserMenuContent } from '@/components/user-menu-content';
 import { Menu, X } from 'lucide-react';
 import * as React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu';
-import { UserMenuContent } from '../user-menu-content';
 
-const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Users', href: '/users' },
-    { name: 'Posts', href: '/posts' },
-    { name: 'CRUD', href: '/crud' },
-    { name: 'contact', href: '/contact' },
-];
+// const navLinks = [
+//     { name: 'Home', href: '/' },
+//     { name: 'Users', href: '/users' },
+//     { name: 'Posts', href: '/posts' },
+//     { name: 'CRUD', href: '/crud' },
+//     { name: 'contact', href: '/contact' },
+// ];
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -94,9 +95,9 @@ export function Navbar() {
             </div>
 
             {isMenuOpen && (
-                <div className="sm:hidden">
+                <div className="min-h-svh sm:hidden">
                     <div className="space-y-1 px-2 pt-2 pb-3">
-                        {navLinks.map((link) => (
+                        {/* {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
@@ -108,9 +109,9 @@ export function Navbar() {
                             >
                                 {link.name}
                             </Link>
-                        ))}
+                        ))} */}
                     </div>
-                    <div className="border-t border-gray-200 pt-4 pb-3">
+                    <div className="border-primary-foreground border-t pt-4 pb-3">
                         <div className="flex items-center gap-2 px-4">
                             {auth.user ? (
                                 <DropdownMenu>
@@ -142,6 +143,10 @@ export function Navbar() {
                                     </Link>
                                 </>
                             )}
+                        </div>
+                        <div className="border-primary-foreground mt-8 flex items-center justify-between gap-2 border-y px-4 py-3">
+                            <p>Theme</p>
+                            <AppearanceToggleDropdown />
                         </div>
                     </div>
                 </div>
