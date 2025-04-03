@@ -3,14 +3,14 @@ import { Transition } from '@headlessui/react';
 import { Head, Link, useForm, usePage } from '@inertiajs/react';
 import { FormEventHandler } from 'react';
 
-import DeleteUser from '@/components/delete-user';
-import HeadingSmall from '@/components/heading-small';
-import InputError from '@/components/stocks/input-error';
-import { Button } from '@/components/ui/button';
+import AppLayout from '@/layouts/app-layout';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import AppLayout from '@/layouts/app-layout';
+import DeleteUser from '@/components/delete-user';
+import HeadingSmall from '@/components/heading-small';
 import SettingsLayout from '@/layouts/settings/layout';
+import InputError from '@/components/stocks/input-error';
+import ButtonSubmit from '@/components/stocks/button-submit';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -105,7 +105,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
                         )}
 
                         <div className="flex items-center gap-4">
-                            <Button disabled={processing}>Save</Button>
+                            <ButtonSubmit submit="Save" submitting="Saving" pending={processing}/>
 
                             <Transition
                                 show={recentlySuccessful}
