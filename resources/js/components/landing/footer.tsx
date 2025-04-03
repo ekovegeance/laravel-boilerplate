@@ -1,3 +1,4 @@
+import AppearanceToggleDropdown from '@/components/appearance-dropdown';
 import { Link } from '@inertiajs/react';
 
 export default function Footer() {
@@ -26,6 +27,9 @@ export default function Footer() {
                         </Link>
                         .
                     </p>
+                </div>
+                <div className="hidden sm:flex">
+                    <AppearanceToggleDropdown />
                 </div>
             </div>
         </footer>
