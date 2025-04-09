@@ -26,12 +26,12 @@ const mainNavItems: NavItem[] = [
 const rightNavItems: NavItem[] = [
     {
         title: 'Repository',
-        href: 'https://github.com/ekovegeanc/laravel-boilerplate',
+        href: 'https://github.com/ekovegeance/laravel-boilerplate',
         icon: Folder,
     },
     {
         title: 'Documentation',
-        href: 'https://github.com/ekovegeanc/laravel-boilerplate',
+        href: 'https://laravel.com/docs',
         icon: BookOpen,
     },
 ];
