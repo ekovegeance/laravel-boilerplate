@@ -8,19 +8,11 @@ First, run the development server:
 laravel new --using=vngne/boilerplate
 ```
 ```bash
-composer run dev
-```
-
-Configure your local environment
-```bash
-cp .env.local .env
-```
-```bash
-php artisan key:generate
+cd your-project-name
 ```
 Migrate database
 ```bash
-php artisan migrate --seed
+composer run dev
 ```
 
 Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
