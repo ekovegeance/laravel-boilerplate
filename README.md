@@ -1,5 +1,5 @@
-# Laravel Boilerplate
 
+![img](https://github.com/ekovegeance/laravel-boilerplate/blob/main/public/laravel-boilerplate.svg)
 
 ## Getting Started
 
