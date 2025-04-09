@@ -1,5 +1,5 @@
 
-![img](https://github.com/ekovegeance/laravel-boilerplate/blob/main/public/laravel-boilerplate.svg)
+![img](https://github.com/ekovegeance/laravel-boilerplate/blob/main/laravel-boilerplate.png)
 
 ## Getting Started
 
