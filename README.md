@@ -1,5 +1,6 @@
 # Laravel Boilerplate
 
+
 ## Getting Started
 
 Installing PHP and the Laravel Installer [Laravel Herd](https://herd.laravel.com/)
