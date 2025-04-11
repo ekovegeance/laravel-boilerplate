@@ -12,7 +12,6 @@ laravel new --using=vngne/boilerplate
 ```bash
 cd your-project-name
 ```
-Migrate database
 ```bash
 composer run dev
 ```
