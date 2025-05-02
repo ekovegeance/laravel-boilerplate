@@ -3,7 +3,10 @@
 
 ## Getting Started
 
-Installing PHP and the Laravel Installer [Laravel Herd](https://herd.laravel.com/)
+Installing PHP and the Laravel Installer
+> [!TIP]
+> Recomended tools [Laravel Herd](https://herd.laravel.com/) + [DBngin](https://dbngin.com/)
+
 
 First, run the development server:
 ```bash
