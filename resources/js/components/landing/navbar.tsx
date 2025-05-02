@@ -3,20 +3,19 @@ import { Button } from '@/components/ui/button';
 import { useInitials } from '@/hooks/use-initials';
 import { SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
-// import clsx from 'clsx';
+
 import AppearanceToggleDropdown from '@/components/appearance-dropdown';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { UserMenuContent } from '@/components/user-menu-content';
 import { Menu, X } from 'lucide-react';
 import * as React from 'react';
+// import clsx from 'clsx';
 
 // const navLinks = [
 //     { name: 'Home', href: '/' },
 //     { name: 'Users', href: '/users' },
-//     { name: 'Posts', href: '/posts' },
-//     { name: 'CRUD', href: '/crud' },
-//     { name: 'contact', href: '/contact' },
+//     { name: 'Etc', href: '/etc' },
 // ];
 
 export function Navbar() {
@@ -73,12 +72,12 @@ export function Navbar() {
                             </DropdownMenu>
                         ) : (
                             <div className="flex items-center gap-2 px-4">
-                                <Link href="/login">
+                                <Link href={route('login')}>
                                     <Button variant="outline" className="mr-2 w-full justify-center">
                                         Sign In
                                     </Button>
                                 </Link>
-                                <Link href="/register">
+                                <Link href={route('register')}>
                                     <Button className="w-full justify-center">Sign Up</Button>
                                 </Link>
                             </div>
@@ -131,13 +130,13 @@ export function Navbar() {
                                 </DropdownMenu>
                             ) : (
                                 <>
-                                    <Link href="/login" onClick={() => setIsMenuOpen(false)}>
+                                    <Link href={route('login')} onClick={() => setIsMenuOpen(false)}>
                                         {' '}
                                         <Button variant="outline" className="mr-2 w-full justify-center">
                                             Sign In
                                         </Button>
                                     </Link>
-                                    <Link href="/register" onClick={() => setIsMenuOpen(false)}>
+                                    <Link href={route('register')} onClick={() => setIsMenuOpen(false)}>
                                         {' '}
                                         <Button className="w-fÌull justify-center">Sign Up</Button>
                                     </Link>
