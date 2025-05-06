@@ -10,13 +10,14 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/compon
 import { UserMenuContent } from '@/components/user-menu-content';
 import { Menu, X } from 'lucide-react';
 import * as React from 'react';
-// import clsx from 'clsx';
+import clsx from 'clsx';
 
-// const navLinks = [
-//     { name: 'Home', href: '/' },
-//     { name: 'Users', href: '/users' },
-//     { name: 'Etc', href: '/etc' },
-// ];
+const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Example CRUD', href: '/examples' },
+    // { name: 'Users', href: '/users' },
+    // { name: 'Etc', href: '/etc' },
+];
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -37,21 +38,19 @@ export function Navbar() {
                             </Link>
                         </div>
                         <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              {/* {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={clsx(
-                    "inline-flex items-center px-1 pt-1 text-sm font-medium",
-                    page.url === link.href
-                      ? " text-primary"
-                      : " text-zinc-500 hover:text-primary"
-                  )}
-                >
-                  {link.name}
-                </Link>
-              ))} */}
-            </div>
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className={clsx(
+                                        'inline-flex items-center px-1 pt-1 text-sm font-medium',
+                                        page.url === link.href ? 'text-primary' : 'hover:text-primary text-zinc-500',
+                                    )}
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                     <div className="hidden sm:ml-6 sm:flex sm:items-center">
                         {auth.user ? (
@@ -96,7 +95,7 @@ export function Navbar() {
             {isMenuOpen && (
                 <div className="min-h-svh sm:hidden">
                     <div className="space-y-1 px-2 pt-2 pb-3">
-                        {/* {navLinks.map((link) => (
+                        {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
@@ -108,7 +107,7 @@ export function Navbar() {
                             >
                                 {link.name}
                             </Link>
-                        ))} */}
+                        ))}
                     </div>
                     <div className="border-primary-foreground border-t pt-4 pb-3">
                         <div className="flex items-center gap-2 px-4">
