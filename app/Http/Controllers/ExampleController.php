@@ -30,7 +30,8 @@ class ExampleController extends Controller
         // Fetch all examples
         $examples = Example::with('user')
             ->latest()
-            ->get();
+            ->paginate(9);
+//        dd($examples);
 
         return Inertia::render('example/index', [
             'examples' => $examples,
