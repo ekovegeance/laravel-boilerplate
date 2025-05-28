@@ -15,7 +15,7 @@ Route::get('/', function () {
     return Inertia::render('landing');
 })->name('home');
 
-Route::resource('examples', ExampleController::class);
+Route::resource('examples', ExampleController::class)->middleware(['auth']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
