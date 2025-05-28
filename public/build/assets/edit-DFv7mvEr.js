@@ -1,0 +1,1 @@
+import{j as t,L as r}from"./app-BF6kCj2q.js";import{L as o}from"./landing-layout-CEwmIw_y.js";/* empty css            */import"./button-C22M2kwQ.js";import"./index-zS02sTpc.js";import"./index-D39yoHKD.js";import"./sun-CAfYh5Bk.js";function u({example:i}){return t.jsxs(o,{children:[t.jsx(r,{title:"edit"}),i.name]})}export{u as default};
