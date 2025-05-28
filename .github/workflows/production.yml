@@ -1,13 +1,13 @@
 name: Production
 
 on:
-push:
-branches:
-- prod
+  push:
+    branches:
+      - prod
 
 jobs:
-deploy:
-runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
