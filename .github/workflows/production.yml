@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - prod
+      - main
 
 jobs:
   deploy:
