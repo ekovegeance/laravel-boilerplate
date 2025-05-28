@@ -1,0 +1,36 @@
+name: Production
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }} 
+          username: ${{ secrets.SSH_USER }} 
+          key: ${{ secrets.SSH_PRIVATE_KEY }} 
+
+          script: |
+            # Change Dir
+            cd /home/laravel-boilerplate/htdocs/laravel-boilerplate.vngne.tech/laravel-boilerplate
+
+            # Pull
+            git pull
+
+            # Fresh deploy: 
+            # echo "Installing Composer dependencies..."
+            # composer install --no-interaction --prefer-dist --optimize-autoloader
+            # echo "Running migrations..."
+            # php artisan migrate --force
+
+            echo "Deployment successful!"
