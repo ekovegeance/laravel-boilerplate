@@ -44,13 +44,14 @@ cat ~/.ssh/id_rsa_github
 name: Production
 
 on:
-push:
-branches:
-- prod
+  push:
+    branches:
+      - prod
+      - main
 
 jobs:
-deploy:
-runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -99,4 +100,5 @@ runs-on: ubuntu-latest
             php artisan up
 
             echo "✅ Deployment to production successful!"
+
 ```
