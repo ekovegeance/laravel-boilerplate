@@ -35,7 +35,7 @@ jobs:
 
             # 3. Tarik perubahan terbaru dari branch 'prod'
             echo "Pulling latest code from prod branch..."
-            git pull origin prod
+            git pull origin main
 
             # 4. Install dependensi Composer (hanya jika ada perubahan di composer.lock)
             echo "Installing Composer dependencies..."
