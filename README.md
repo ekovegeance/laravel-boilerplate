@@ -1,9 +1,12 @@
-# Laravel Boilerplate
 
+![img](https://github.com/ekovegeance/laravel-boilerplate/blob/main/laravel-boilerplate.png)
 
 ## Getting Started
 
-Installing PHP and the Laravel Installer [Laravel Herd](https://herd.laravel.com/)
+Installing PHP and the Laravel Installer
+> [!TIP]
+> Recomended tools [Laravel Herd](https://herd.laravel.com/) + [DBngin](https://dbngin.com/)
+
 
 First, run the development server:
 ```bash
@@ -12,7 +15,6 @@ laravel new --using=vngne/boilerplate
 ```bash
 cd your-project-name
 ```
-Migrate database
 ```bash
 composer run dev
 ```
