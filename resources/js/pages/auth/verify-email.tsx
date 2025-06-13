@@ -4,7 +4,7 @@ import { Head, useForm } from '@inertiajs/react';
 
 import TextLink from '@/components/text-link';
 import AuthLayout from '@/layouts/auth-layout';
-import ButtonSubmit from '@/components/stocks/button-submit';
+import ButtonSubmit from '@/components/shared/button-submit';
 
 export default function VerifyEmail({ status }: { status?: string }) {
     const { post, processing } = useForm({});

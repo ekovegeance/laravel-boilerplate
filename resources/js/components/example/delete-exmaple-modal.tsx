@@ -2,7 +2,7 @@ import { FormEventHandler, useState } from 'react';
 import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger,} from '@/components/ui/dialog';
 import {Button} from '@/components/ui/button';
 import { useForm } from '@inertiajs/react';
-import ButtonSubmit from '@/components/stocks/button-submit';
+import ButtonSubmit from '@/components/shared/button-submit';
 import {toast} from "sonner";
 
 /**

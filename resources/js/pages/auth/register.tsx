@@ -5,10 +5,10 @@ import TextLink from '@/components/text-link';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import AuthLayout from '@/layouts/auth-layout';
-import InputError from '@/components/stocks/input-error';
-import ButtonSubmit from '@/components/stocks/button-submit';
-import InputShowPassword from '@/components/stocks/input-show-password';
-import InputStrongPassword from '@/components/stocks/input-strong-password';
+import InputError from '@/components/shared/input-error';
+import ButtonSubmit from '@/components/shared/button-submit';
+import InputShowPassword from '@/components/shared/input-show-password';
+import InputStrongPassword from '@/components/shared/input-strong-password';
 
 type RegisterForm = {
     name: string;

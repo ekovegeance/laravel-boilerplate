@@ -1,5 +1,5 @@
-import ButtonSubmit from '@/components/stocks/button-submit';
-import InputError from '@/components/stocks/input-error';
+import ButtonSubmit from '@/components/shared/button-submit';
+import InputError from '@/components/shared/input-error';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
