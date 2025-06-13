@@ -6,10 +6,10 @@ import { type BreadcrumbItem } from '@/types';
 import { Transition } from '@headlessui/react';
 import HeadingSmall from '@/components/heading-small';
 import SettingsLayout from '@/layouts/settings/layout';
-import InputError from '@/components/stocks/input-error';
-import ButtonSubmit from '@/components/stocks/button-submit';
-import InputShowPassword from '@/components/stocks/input-show-password';
-import InputStrongPassword from '@/components/stocks/input-strong-password';
+import InputError from '@/components/shared/input-error';
+import ButtonSubmit from '@/components/shared/button-submit';
+import InputShowPassword from '@/components/shared/input-show-password';
+import InputStrongPassword from '@/components/shared/input-strong-password';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {

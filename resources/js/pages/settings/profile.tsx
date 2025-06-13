@@ -9,8 +9,8 @@ import { Label } from '@/components/ui/label';
 import DeleteUser from '@/components/delete-user';
 import HeadingSmall from '@/components/heading-small';
 import SettingsLayout from '@/layouts/settings/layout';
-import InputError from '@/components/stocks/input-error';
-import ButtonSubmit from '@/components/stocks/button-submit';
+import InputError from '@/components/shared/input-error';
+import ButtonSubmit from '@/components/shared/button-submit';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {

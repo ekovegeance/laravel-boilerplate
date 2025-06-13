@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import Layout from '@/layouts/landing-layout';
 import { Example, PaginatedData } from '@/types';
 import { Head, Link } from '@inertiajs/react';
-import SimplePaginate from '@/components/stocks/simple-paginate';
+import SimplePaginate from '@/components/shared/simple-paginate';
 
 
 export default function index({ examples }: { examples: PaginatedData<Example> }) {

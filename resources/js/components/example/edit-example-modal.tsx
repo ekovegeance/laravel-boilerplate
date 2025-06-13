@@ -3,9 +3,9 @@ import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTr
 import {Button} from '@/components/ui/button';
 import {Input} from '@/components/ui/input';
 import {Label} from '@/components/ui/label';
-import InputError from "@/components/stocks/input-error";
+import InputError from "@/components/shared/input-error";
 import {toast} from "sonner";
-import ButtonSubmit from "@/components/stocks/button-submit";
+import ButtonSubmit from "@/components/shared/button-submit";
 import { Example } from '@/types';
 import { useForm } from '@inertiajs/react';
 import { ExampleFormType } from '@/types/form';
