@@ -20,7 +20,7 @@ composer run dev
 ```
 
 Open [http://localhost:8000](http://localhost:8000) with your browser to see the result.
-Use [Style Guide](https://ekovegeance.github.io/styleguide/coding/laravel) for Consistent Development 
+Use [Style Guide](https://docs-ekovegeance.vercel.app/styleguide/coding-standards/laravel) for Consistent Development 
 
 ## Tech Stack
 
